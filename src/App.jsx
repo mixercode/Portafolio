@@ -3,8 +3,13 @@ import InfoCard from "./components/InfoCard";
 
 function App() {
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <InfoCard name="Miguel" description="Hola" email="jsjsjs" />
+    <div className="flex items-center justify-center bg-black p-10">
+      <InfoCard
+        name="Miguel Flores "
+        location="Hola"
+        email="yo@me.com"
+        cellphone="2222222222"
+      />
     </div>
   );
 }
