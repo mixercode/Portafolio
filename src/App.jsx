@@ -1,7 +1,7 @@
 import React from "react";
 import InfoCard from "./components/InfoCard";
 import NavigationCard from "./components/NavigationCard";
-import WindowsCard from "./components/WindowsCard";
+import WindowsCard from "./components/windowsCard";
 
 function App() {
   return (
