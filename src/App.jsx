@@ -1,24 +1,15 @@
-import React from "react";
-import InfoCard from "./components/InfoCard";
-import NavigationCard from "./components/NavigationCard";
-import WindowsCard from "./components/windowsCard";
+import { Routes, Route } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import CertificatePage from "./pages/CertificatePage";
 
 function App() {
   return (
-    <div className="flex items-center justify-center bg-black p-10">
-      <NavigationCard title={"About me"}>
-        <div className="flex flex-row gap-10">
-          <p className="w-1/2 text-left">
-            I'm Miguel, a passionate developer with a love for creating dynamic
-            and responsive web applications. With a strong foundation in
-            JavaScript and React, I enjoy bringing ideas to life through code.
-          </p>
-          <WindowsCard>
-            <p>asdasdasdsdsdasaasdsdsdsdsaDSdasdasdd</p>
-          </WindowsCard>
-        </div>
-      </NavigationCard>
-    </div>
+    <Routes>
+      <Route path="/" element={<AboutPage />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/certificates" element={<CertificatePage />} />
+    </Routes>
   );
 }
 
