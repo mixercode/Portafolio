@@ -1,7 +1,21 @@
+import NavigationCard from "../components/NavigationCard";
+import WindowsCard from "../components/WindowsCard";
+
 export default function CertificatePage() {
   return (
-    <div className="flex items-center justify-center bg-black p-10 w-2/3">
-      <h1 className="text-4xl font-bold">Certificate Page</h1>
+    <div className="min-h-screen bg-black flex items-center justify-center p-4">
+      <NavigationCard title={"Certificates"}>
+        <div className="flex flex-row gap-10">
+          <p className="w-1/2 text-left">
+            I'm Miguel, a passionate developer with a love for creating dynamic
+            and responsive web applications. With a strong foundation in
+            JavaScript and React, I enjoy bringing ideas to life through code.
+          </p>
+          <WindowsCard>
+            <p>asdasdasdsdsdasaasdsdsdsdsaDSdasdasdd</p>
+          </WindowsCard>
+        </div>
+      </NavigationCard>
     </div>
   );
 }
