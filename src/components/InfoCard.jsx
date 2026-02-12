@@ -8,7 +8,7 @@ import ContactItem from "./ContactItem";
 
 export default function InfoCard({ name, location, email, cellphone }) {
   return (
-    <Card>
+    <Card className="p-6">
       <div className="flex flex-col items-center gap-5">
         <img
           src={image}
@@ -16,7 +16,7 @@ export default function InfoCard({ name, location, email, cellphone }) {
           className="w-2/3 rounded-full border-4 border-[#1c2a56]"
         />
 
-        <p className="text-2xl font-semibold">{name}</p>
+        <p className="text-xl font-semibold text-center">{name}</p>
 
         <div className="w-2/3 rounded-full bg-[#121b36] px-4 py-1 text-center">
           <p className="text-base font-medium text-[#164ae8]">
