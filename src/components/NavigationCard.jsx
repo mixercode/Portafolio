@@ -3,8 +3,8 @@ import NavBar from "./NavBar";
 
 export default function NavigationCard({ title, children }) {
   return (
-    <Card className="relative w-full max-w-5xl mx-auto min-h-150 p-14">
-      <div className="absolute top-0 left-0 z-10">
+    <Card className="relative w-full max-w-5xl mx-auto min-h-87.5 p-10 overflow-visible bg-[#0f121a]">
+      <div className="absolute -top-5 left-6 z-10">
         <NavBar />
       </div>
 
