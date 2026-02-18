@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-// Centralizamos la configuración de estilos para mantener el JSX limpio
 const NAV_ITEMS = [
   { path: "/", label: "About" },
   { path: "/projects", label: "Projects" },
