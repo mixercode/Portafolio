@@ -11,7 +11,7 @@ export default function CertificatePage() {
           JavaScript and React, I enjoy bringing ideas to life through code.
         </p>
         <WindowsCard>
-          <p>asdasdasdsdsdasaasdsdsdsdsaDSdasdasdd</p>
+          <p>asdasdasdsdsdasaasdsdsdsdsaDSdasdasddsfdfsdfsdfsdf</p>
         </WindowsCard>
       </div>
     </NavigationCard>
