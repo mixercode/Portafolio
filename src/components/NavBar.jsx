@@ -8,24 +8,22 @@ const NAV_ITEMS = [
 
 export default function NavBar() {
   return (
-    <nav className="backdrop-blur-md bg-[#151926cc] border border-[#2A2F3E] rounded-full overflow-hidden px-8 py-4 min-w-[300px] shadow-lg">
+    <nav className="backdrop-blur-md bg-[#151926cc] border border-[#2A2F3E] rounded-full overflow-hidden px-8 py-4 min-w-75 shadow-lg">
       <ul className="flex flex-row gap-8 items-center justify-center">
         {NAV_ITEMS.map(({ path, label }) => (
           <li key={path}>
             <NavLink
               to={path}
               end
-              className={
-                ({ isActive }) =>
-                  isActive
-                    ? "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-[#3b82f6]" // ESTADO ACTIVO (Solo azul)
-                    : "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors duration-300" // ESTADO INACTIVO (Gris y blanco al hacer hover)
+              className={({ isActive }) =>
+                isActive
+                  ? "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-[#3b82f6]"
+                  : "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors duration-300"
               }
             >
               {({ isActive }) => (
                 <>
                   {label}
-                  {/* Línea indicadora inferior */}
                   <span
                     className={`absolute -bottom-1 h-0.5 bg-[#3b82f6] rounded-full transition-all duration-300 ${
                       isActive
