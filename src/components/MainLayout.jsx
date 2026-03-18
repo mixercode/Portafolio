@@ -22,7 +22,7 @@ export default function MainLayout() {
       >
         <GlobalSpotlight
           gridRef={layoutRef}
-          spotlightRadius={400}
+          spotlightRadius={200}
           glowColor="22, 74, 232"
           cardSelector=".spotlight-card"
         />
