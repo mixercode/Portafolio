@@ -1,7 +1,7 @@
 export const CERTIFICATES_DATA = [
   {
     id: 1,
-    title: "Certificado de React",
+    title: "Certificado de Reactasdasdasdasdasdasdasd",
     pdfUrl:
       "/certificados/Certificado - CÓDIGOFEST 2025 powered by Microsoft.pdf",
     previewUrl: "/thumbnails/codigo facilito-codigofest.png",

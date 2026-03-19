@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { IoIosClose } from "react-icons/io";
 
 export default function Modal({ isOpen, onClose, pdfUrl, title }) {
   useEffect(() => {
@@ -16,45 +17,39 @@ export default function Modal({ isOpen, onClose, pdfUrl, title }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 sm:p-6"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 sm:p-6 transition-opacity"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
+      aria-labelledby="modal-title"
     >
       <div
-        className="relative w-full max-w-5xl h-[85vh] bg-[#151926] border border-[#2A2F3E] rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+        className="relative w-full max-w-5xl h-[90vh] sm:h-[85vh] bg-[#151926] border border-[#2A2F3E] rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between items-center p-4 border-b border-[#2A2F3E] bg-[#1a1f2e]">
-          <h3 className="text-lg font-semibold text-gray-100 truncate pr-4">
+        {/* Header - Mejorado el espaciado (padding) y la tipografía */}
+        <div className="flex justify-between items-center px-6 py-2 border-b border-[#2A2F3E] bg-[#1a1f2e]">
+          <h3
+            id="modal-title"
+            className="text-xl font-semibold text-gray-100 truncate pr-4 tracking-tight"
+          >
             {title}
           </h3>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-white transition-colors p-1 rounded-lg hover:bg-[#2A2F3E]"
+            className="text-gray-400 hover:text-white transition-all p-0 rounded-lg hover:bg-[#2A2F3E] active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
             aria-label="Cerrar modal"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
+            <IoIosClose size={25} />
           </button>
         </div>
 
-        <div className="grow w-full h-full bg-gray-900">
+        {/* Body - Contenedor del PDF */}
+        <div className="grow w-full h-full bg-[#0d111a] relative">
           <iframe
             src={`${pdfUrl}#toolbar=0`}
             title={`Certificado de ${title}`}
-            className="w-full h-full border-none"
+            className="w-full h-full border-none absolute inset-0"
           />
         </div>
       </div>
