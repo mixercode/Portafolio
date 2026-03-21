@@ -1,3 +1,5 @@
+//TODO: agregar nombre del curso en el título de cada certificado
+
 export const CERTIFICATES_DATA = [
   {
     id: 1,

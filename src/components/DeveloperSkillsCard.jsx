@@ -1,5 +1,6 @@
 import WindowsCard from "./WindowsCard";
 export default function DeveloperSkillsCard() {
+  //TODO:cambiar por habilidades blandas
   return (
     <WindowsCard>
       <div className="font-mono text-xs sm:text-sm lg:text-base text-[#d4d4d4] p-2">

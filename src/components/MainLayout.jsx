@@ -26,7 +26,7 @@ export default function MainLayout() {
           glowColor="22, 74, 232"
           cardSelector=".spotlight-card"
         />
-        <aside className="w-full lg:w-80 lg:sticky lg:top-12 h-fit shrink-0 z-20">
+        <aside className="w-full lg:w-80 lg:sticky lg:top-12 h-fit shrink-0">
           <InfoCard
             name={USER_INFO.name}
             location={USER_INFO.location}
