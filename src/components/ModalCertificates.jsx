@@ -27,7 +27,6 @@ export default function ModalCertificates({ isOpen, onClose, pdfUrl, title }) {
         className="relative w-full max-w-5xl h-[90vh] sm:h-[85vh] bg-[#151926] border border-[#2A2F3E] rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header - Mejorado el espaciado (padding) y la tipografía */}
         <div className="flex justify-between items-center px-6 py-2 border-b border-[#2A2F3E] bg-[#1a1f2e]">
           <h3
             id="modal-title"

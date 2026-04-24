@@ -19,7 +19,6 @@ export default function SectionCard({ data, openModal }) {
 
             <div className="absolute inset-0 bg-[#303a58b0] group-hover:bg-transparent transition-colors duration-300" />
           </div>
-
           <div className="p-3 grow flex flex-col items-center text-center ">
             <h3 className="text-lg  text-gray-100 mb-2 leading-tight">
               {item.title}
