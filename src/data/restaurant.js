@@ -56,4 +56,41 @@ export const RESTAURANT_DATA = [
     technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
     previewUrl: "/thumbnails/proyects/Contenedor/AdminCocina/1.png",
   },
+  {
+    id: 5,
+    title: "Applicacion de Cocina",
+    description:
+      "Applicacion Movile para gestionar resivir comanda y gestionar los platillos disponibles",
+    images: [
+      "/thumbnails/proyects/Contenedor/AppCocina/1.png",
+      "/thumbnails/proyects/Contenedor/AppCocina/2.png",
+      "/thumbnails/proyects/Contenedor/AppCocina/3.png",
+      "/thumbnails/proyects/Contenedor/AppCocina/4.png",
+      "/thumbnails/proyects/Contenedor/AppCocina/5.png",
+      "/thumbnails/proyects/Contenedor/AppCocina/6.png",
+      "/thumbnails/proyects/Contenedor/AppCocina/7.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/Contenedor/AppCocina/1.png",
+  },
+  {
+    id: 6,
+    title: "Applicacion de Mesero",
+    description:
+      "Applicacion Movile para hacer pedidos y gestionar las mesas disponibles en el restaurante",
+    images: [
+      "/thumbnails/proyects/Contenedor/AppMesero/1.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/2.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/3.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/4.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/5.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/6.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/7.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/8.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/9.png",
+      "/thumbnails/proyects/Contenedor/AppMesero/10.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/Contenedor/AppMesero/1.png",
+  },
 ];

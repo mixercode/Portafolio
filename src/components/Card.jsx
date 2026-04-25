@@ -7,11 +7,11 @@ export default function Card({
   allowOverflow = false,
   isRounded = true,
 }) {
-  const roundedClasses = isRounded ? "rounded-[48px]" : "rounded-[15px]";
+  const roundedClasses = isRounded ? "rounded-[48px]" : "rounded-[16px]"; // Cambiado a 16px (1rem) estándar
 
   return (
     <ParticleCard
-      className={`spotlight-card backdrop-blur-md bg-[#151926cc] border border-[#2A2F3E] ${roundedClasses} drop-shadow-2xl ${className}`}
+      className={`spotlight-card backdrop-blur-md bg-[#151926]/80 border border-[#2A2F3E] hover:border-indigo-500/30 transition-colors duration-300 ${roundedClasses} shadow-2xl shadow-black/50 ${className}`}
       enableTilt={true}
       clickEffect={true}
       glowColor="22, 74, 232"
