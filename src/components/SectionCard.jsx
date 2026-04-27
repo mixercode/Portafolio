@@ -1,9 +1,13 @@
 import React from "react";
 import Card from "./Card";
 
-export default function SectionCard({ data, openModal }) {
+export default function SectionCard({
+  data,
+  openModal,
+  gridClass = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+}) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 w-full">
+    <div className={`grid gap-6 md:gap-8 w-full ${gridClass}`}>
       {data.map((item) => (
         <Card
           key={item.id}
