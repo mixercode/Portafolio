@@ -11,7 +11,7 @@ export default function NavigationCard({ title, children }) {
         <NavBar />
       </div>
 
-      <div className="flex flex-col gap-8 h-full w-full">
+      <div className="flex flex-col gap-5 h-full w-full">
         <div className="relative">
           <h2 className="text-4xl font-bold text-gray-100 mb-2">{title}</h2>
 
